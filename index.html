@@ -9,12 +9,17 @@
 </head>
 
 <body>
+  
+
   <div class="tea-shop">
     <h1>☕ Welcome to the Little Birthday Tea Shop</h1>
     <p>Today’s special is a warm cup of joy — just for you.</p>
+    <p id="gift-message" class="gift-label">Tap the gift to open it 🎁</p>
 
-    <button onclick="revealNote()">Read the Note</button>
-
+    <!-- <button onclick="revealNote()">Read the Note</button> -->
+<div id="gift-wrapper">
+  <img src="./assets/giftbox.png" id="gift-box" alt="Open your gift">
+</div>
     <div id="note" class="hidden">
       <p>Hey bro 💛 Happy 24th Birthday!</p>
       <p>I hope your year is full of quiet joys, sweet moments, and reminders that I'm always here for you — even if
@@ -24,11 +29,11 @@
   </div>
 
   <div class="teacup">
-    <img src="assets/teacup.png" alt="steaming teacup">
+    <img src="./assets/teacup.png" alt="steaming teacup">
   </div>
 
   <audio autoplay loop>
-    <source src="assets/music.mp3" type="audio/mpeg">
+    <source src="./assets/music.mp3" type="audio/mpeg">
   </audio>
 
   <script src="script.js"></script>
@@ -39,40 +44,40 @@
     <h2>📸 Memories on the Wall</h2>
     <div class="polaroid-gallery">
       <div class="polaroid">
-        <img src="assets/memory1.jpg" alt="Memory 1">
+        <img src="./assets/memory1.jpg" alt="Memory 1">
         <p class="caption">Baby paan and strawberry cake</p>
       </div>
       <div class="polaroid">
-        <img src="assets/paan19.jpg" alt="paan19">
+        <img src="./assets/paan19.jpg" alt="paan19">
         <p class="caption">Woah, this is when you turned 19! That's like Vibha now</p>
       </div>
       <div class="polaroid">
-        <img src="assets/paan20.jpg" alt="paan20">
+        <img src="./assets/paan20.jpg" alt="paan20">
         <p class="caption">This is when paan turned 20!</p>
       </div>
       <div class="polaroid">
-        <img src="assets/accolade.jpeg" alt="accolade">
+        <img src="./assets/accolade.jpeg" alt="accolade">
         <p class="caption">At accolade - so thankful paan was there with me for my first year :)</p>
       </div>
       <div class="polaroid">
-        <img src="assets/theater.jpg" alt="avatar">
+        <img src="./assets/theater.jpg" alt="avatar">
         <p class="caption">Avatar at the theater!</p>
       </div>
       <div class="polaroid">
-        <img src="assets/lights.jpg" alt="lights">
+        <img src="./assets/lights.jpg" alt="lights">
         <p class="caption">The evergreen church lights!</p>
       </div>
       <div class="polaroid">
-        <img src="assets/spiderpaan.jpeg" alt="spiderpaan">
+        <img src="./assets/spiderpaan.jpeg" alt="spiderpaan">
         <p class="caption">Now you might be getting older, but you still are my tiny little big brother and that's what
           keeps making me laugh :D</p>
       </div>
       <div class="polaroid">
-        <img src="assets/carrousel.jpeg" alt="carrousel">
+        <img src="./assets/carrousel.jpeg" alt="carrousel">
         <p class="caption">You always take us to fun places and make everyone around you happy!</p>
       </div>
       <div class="polaroid">
-        <img src="assets/happypaan.jpg" alt="happypaan">
+        <img src="./assets/happypaan.jpg" alt="happypaan">
         <p class="caption">Happy Birthday Paanchoo! Look at that big smile :D</p>
       </div>
     </div>
@@ -84,14 +89,11 @@
     <p id="fortune-text"></p>
   </div>
 
-  <!-- Easter Egg -->
-  <div id="easter-egg" class="hidden">
-    <h2>🫖 You found the hidden teapot!</h2>
-    <p class="coupon">Redeem for 1 unsolicited pep talk or 3 memes at random. 💌</p>
-  </div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
-  <!-- Hidden clickable teapot -->
-  <img src="assets/teacup.png" id="teapot-icon" class="hidden" alt="teapot">
+  <img src="assets/azer.png" id="easter-egg" alt="Secret">
+
+<script src="script.js"></script>
 
 </body>
 

@@ -127,28 +127,59 @@ button:hover {
   margin-top: 5px;
 }
 
-/* Teapot Easter Egg */
-#teapot-icon {
-  width: 60px;
-  position: fixed;
-  top: 20px;
-  right: 20px;
+
+#gift-wrapper {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#gift-box {
+  width: 150px;
+  scale: 2;
   cursor: pointer;
-  opacity: 0.7;
-  transition: transform 0.2s;
+  transition: transform 0.3s ease;
 }
 
-#teapot-icon:hover {
-  transform: scale(1.1);
+#gift-box:hover {
+  transform: scale(1.05);
 }
 
+#gift-box.opened {
+  animation: openBox 1s forwards;
+}
+
+@keyframes openBox {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.2) rotate(10deg); }
+  100% { transform: scale(0) rotate(-20deg); opacity: 0; }
+}
+
+.hidden {
+  display: none;
+}
+
+.gift-label {
+  font-size: 18px;
+  color: #5a4332;
+  font-style: italic;
+  margin-top: 12px;
+}
 #easter-egg {
-  margin-top: 50px;
-  background: #fff7e6;
-  padding: 20px;
-  border-radius: 12px;
-  border: 2px dashed #c49c6e;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90px;
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#easter-egg.wiggle {
+  animation: egg-wiggle 0.4s ease;
+}
+
+@keyframes egg-wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
 }
