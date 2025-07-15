@@ -1,0 +1,154 @@
+body {
+  background: url('https://cdn-images-1.medium.com/v2/resize:fit:1024/1*qu_LN-4yyToRzhuldK-xqw.png') no-repeat center center fixed;
+  /* cozy texture */
+  background-size: cover;
+  font-family: 'Quicksand', sans-serif;
+  color: #4e4039;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.tea-shop {
+  background-color: rgba(255, 255, 245, 0.95);
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+button {
+  background: #d7b899;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+}
+
+button:hover {
+  background: #e4c8a1;
+}
+
+.hidden {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.teacup img {
+  width: 90px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+/*Fortune area*/
+#fortune-area {
+  margin-top: 40px;
+  background-color: #fdf7ef;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #e0c8a3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('https://www.transparenttextures.com/patterns/cream-pixels.png');
+  /* cozy subtle texture */
+  background-repeat: repeat;
+}
+
+#fortune-area h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #5b4531;
+}
+
+#fortune-text {
+  font-style: italic;
+  color: #6b4d3c;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+
+/* Polaroid board */
+#polaroid-board {
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 248, 240, 0.85);
+  /* soft warm translucent color */
+  border: 1px solid rgba(228, 209, 179, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.polaroid-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.polaroid {
+  background: #fffaf0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 140px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.caption {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Teapot Easter Egg */
+#teapot-icon {
+  width: 60px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: transform 0.2s;
+}
+
+#teapot-icon:hover {
+  transform: scale(1.1);
+}
+
+#easter-egg {
+  margin-top: 50px;
+  background: #fff7e6;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px dashed #c49c6e;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Little Birthday Tea Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="tea-shop">
+    <h1>☕ Welcome to the Little Birthday Tea Shop</h1>
+    <p>Today’s special is a warm cup of joy — just for you.</p>
+
+    <button onclick="revealNote()">Read the Note</button>
+
+    <div id="note" class="hidden">
+      <p>Hey bro 💛 Happy 24th Birthday!</p>
+      <p>I hope your year is full of quiet joys, sweet moments, and reminders that I'm always here for you — even if
+        just virtually across the table.</p>
+      <p>Love always, your barista/sister 🍵</p>
+    </div>
+  </div>
+
+  <div class="teacup">
+    <img src="assets/teacup.png" alt="steaming teacup">
+  </div>
+
+  <audio autoplay loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+
+
+  <!-- Polaroid Board -->
+  <div id="polaroid-board" class="hidden">
+    <h2>📸 Memories on the Wall</h2>
+    <div class="polaroid-gallery">
+      <div class="polaroid">
+        <img src="assets/memory1.jpg" alt="Memory 1">
+        <p class="caption">Baby paan and strawberry cake</p>
+      </div>
+      <div class="polaroid">
+        <img src="assets/paan19.jpg" alt="paan19">
+        <p class="caption">Woah, this is when you turned 19! That's like Vibha now</p>
+      </div>
+      <div class="polaroid">
+        <img src="assets/paan20.jpg" alt="paan20">
+        <p class="caption">This is when paan turned 20!</p>
+      </div>
+      <div class="polaroid">
+        <img src="assets/accolade.jpeg" alt="accolade">
+        <p class="caption">At accolade - so thankful paan was there with me for my first year :)</p>
+      </div>
+      <div class="polaroid">
+        <img src="assets/theater.jpg" alt="avatar">
+        <p class="caption">Avatar at the theater!</p>
+      </div>
+      <div class="polaroid">
+        <img src="assets/lights.jpg" alt="lights">
+        <p class="caption">The evergreen church lights!</p>
+      </div>
+      <div class="polaroid">
+        <img src="assets/spiderpaan.jpeg" alt="spiderpaan">
+        <p class="caption">Now you might be getting older, but you still are my tiny little big brother and that's what
+          keeps making me laugh :D</p>
+      </div>
+      <div class="polaroid">
+        <img src="assets/carrousel.jpeg" alt="carrousel">
+        <p class="caption">You always take us to fun places and make everyone around you happy!</p>
+      </div>
+      <div class="polaroid">
+        <img src="assets/happypaan.jpg" alt="happypaan">
+        <p class="caption">Happy Birthday Paanchoo! Look at that big smile :D</p>
+      </div>
+    </div>
+  </div>
+  <!-- Tea Fortune -->
+  <div id="fortune-area" class="hidden">
+    <h2> 🍵 For when you need some Iroh motivation </h2>
+    <button onclick="generateFortune()">Hear from Iroh</button>
+    <p id="fortune-text"></p>
+  </div>
+
+  <!-- Easter Egg -->
+  <div id="easter-egg" class="hidden">
+    <h2>🫖 You found the hidden teapot!</h2>
+    <p class="coupon">Redeem for 1 unsolicited pep talk or 3 memes at random. 💌</p>
+  </div>
+
+  <!-- Hidden clickable teapot -->
+  <img src="assets/teacup.png" id="teapot-icon" class="hidden" alt="teapot">
+
+</body>
+
+</html>
